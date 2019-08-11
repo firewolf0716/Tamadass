@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+* {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    font-weight: 500;
+}
+
+.lg_wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.out_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.in_wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.border-b1 {
+    border-bottom: 1px solid #50af53;
+}
+
+
+/*begin header style*/
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .site-header:before {
+        content: "";
+        display: table;
+        table-layout: fixed;
+    }
+
+    .site-header {
+        height: 95px;
+        background-color: #fff;
+    }
+
+    .headerWrapper {
+        padding: 0;
+    }
+
+    .headerTop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fixedHeader {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        background: #fff;
+    }
+
+    .head_wrapper {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        height: 100%;
+    }
+
+    .logo_box {
+        /*width: 18%;*/
+        width: 216px;
+        padding: 20px 20px 25px;
+    }
+
+    .logo_img {
+        width: 100%;
+        height: 41px;
+        vertical-align: bottom;
+    }
+
+    .head_menu_box {
+        /*width: 63%;*/
+        width: 756px;
+    }
+
+    .menu-common-container{
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    #header-menu {
+        /*padding-top: 43px;*/
+        height: 100%;
+        position: relative;
+        height:  max-content;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #header-menu li {
+        display: inline;
+        text-align: center;
+        position: relative;
+        padding: 0 15px;
+        line-height: 17pt;
+    }
+
+    #header-menu>li>a {
+        padding: 0.1rem 0;
+        font-size: 14px;
+        font-family: "HiraKakuProN";
+        color: rgb(80, 175, 83);
+        line-height: 14px;
+    }
+
+    #header-menu>li>a:hover{
+        color: #50af53b3;
+        border-bottom: 1px solid #50af53b3;
+    }
+
+    .head_contact_box {
+        /*width: 19%;*/
+        width: 228px;
+        height: 100%;
+        border-left: 1px solid #50af53;
+        border-right: 1px solid #50af53;
+    }
+
+    .head_tel {
+        height: 55px;
+        background-color: #50af53;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .head_tel_box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .head_tel_num {
+        font-size: 23px;
+        font-family: "AvenirNextCondensed";
+        color: rgb(255, 246, 127);
+        line-height: 23px;
+    }
+
+    .head_tel_num span {
+        vertical-align: bottom;
+    }
+
+    .head_tel_time {
+        font-size: 11px;
+        font-family: "HiraKakuProN";
+        color: rgb(255, 255, 255);
+        line-height: 13px;
+    }
+
+    .header_mail {
+        height: 40px;
+        background-color: rgb(246, 255, 246);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_mail p {
+        font-size: 14px;
+        font-family: "HiraKakuProN";
+        color: rgb(80, 175, 83);
+        line-height: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #hamburger_link{
+        display: none;
+    }
+
+/*end header style*/
+
+.site-content-box {
+    margin-top: 95px;
+}
+
+
+/*begin footer style*/
+
+.site_footer {
+    background-color: #3e3e3e;
+}
+
+.foot_logo_box {
+    background-color: rgb(80, 175, 83);
+    height: 100px;    
+}
+
+.foot_logo_box .in_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+}
+
+.foot_log_box{
+    position: relative;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot_logo_img{
+    width: 100%;
+    height: 40px;
+    vertical-align: bottom;
+}
+
+.foot_tel_box{
+    width: 490px;
+    height: 100%;
+    padding-top: 28px;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+.foot_tel_num{
+    font-size: 30pt;
+    font-family: "AvenirNextCondensed";
+    color: rgb(255, 255, 255);
+    line-height: 45pt;
+    letter-spacing: -2px;
+    padding-right: 15px;
+}
+.foot_tel_num p {
+    vertical-align: bottom;
+}
+
+
+
+.foot_tel_time{
+    font-size: 9pt;
+    font-family: "HiraKakuProN";
+    color: rgb(255, 255, 255);
+    line-height: 1.745;
+    padding-left: 1px;
+}
+
+
+.foot_mail_box{
+    width: 240px;
+    height: 100%;
+    background-color: rgb(246, 255, 246);
+    border: 1px solid rgb(80, 175, 83);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot_mail_box p {
+  font-size: 16pt;
+  font-family: "HiraKakuProN";
+  color: rgb(80, 175, 83);
+  line-height: 16px;
+  text-align: center;
+}
+
+
+
+
+.foot_menu_box {
+    background-color: rgb(107, 188, 110);
+    height: 226px;
+}
+
+.foot_menu_box .in_wrapper{
+    height: 100%;
+}
+
+.foot_menu_wrapper{
+    /*padding: 0 110px;*/
+}
+
+.foot_menu_wrapper > div{
+    position: relative;
+    top: 45%;
+}
+
+#footer-menu {
+    display: flex;
+    align-items: center;
+}
+
+#footer-menu li {
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+}
+
+#footer-menu>li>a {
+    display: inline-block;
+    padding: 0.1rem 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: "HiraKakuProN";
+    color: #fff;
+    line-height: 14px;
+}
+
+#footer-menu>li>a:hover{
+    color: #ffffffb3;
+    border-bottom: 1px solid #ffffffb3;
+}
+
+#footer-menu>li>a:after{
+    content: '';
+    border-right: 1px solid #fff;
+    position: absolute;
+    top: 15%;
+    right: 0px;
+    width: 1px;
+    height: 58%;
+}
+
+#footer-menu>li:last-child>a::after{
+    border: 0;
+}
+
+.foot_site_info {
+    text-align: center !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.foot_site_info p {
+    color: #ffffff;
+    font-family: "AvenirNextCondensed";
+  color: rgb(255, 255, 255);
+    font-size: 10pt;
+    line-height: 10pt;
+}
+
+/*end footer style*/

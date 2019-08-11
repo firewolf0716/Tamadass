@@ -1,0 +1,559 @@
+@charset "utf-8";
+
+/*begin main visual part*/
+.mvisual_box{    
+    position: relative;
+    height: 585px;
+    background-image: url( ../img/front/mv_back.jpg );
+    background-repeat: no-repeat; 
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+}
+
+.mvisual_box img{
+    position: absolute;
+    height: auto;
+    width: 51%;
+    /* margin: 0 auto; */
+    left: 25%;
+    
+}
+
+.mv_title_box{
+    position: absolute;
+    top: 69%;
+    left: -3%;
+    background-color: #000;
+    opacity: 0.6;
+    -webkit-transform: skewX(-15.5deg);
+    -ms-transform: skewX(-15.5deg);
+    transform: skewX(-15.5deg);
+}
+
+.mv_title{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    padding-left: 10%;
+    align-items: center;
+    justify-content: center;
+    -webkit-transform: skewX(15.5deg);
+    -ms-transform: skewX(15.5deg);
+    transform: skewX(15.5deg);
+}
+
+
+.mv_title p{
+    font-size: 22px;
+    font-family: "GShinGoPro";
+    color: #fff;
+    line-height: 44px;
+    text-align: left;
+    letter-spacing: 9px;
+    -webkit-transform: skewX(-7deg);
+    -ms-transform: skewX(-7deg);
+    transform: skewX(-7deg);
+}
+
+.mv_title p span{
+    font-size: 26px;
+}
+
+
+/*end main visual part*/
+
+/*begin company part*/
+.company_box{
+    position: relative;
+    background-image: url( ../img/front/company_back.jpg );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.company_label{
+    width: 54%;
+    padding-top: 20px;
+    padding-bottom: 33px;
+}
+.company_label p{
+    font-size: 18px;
+    font-family: "HiraKakuProN";
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+.company_description{
+    width: 55%;
+    min-height: 100px;
+    overflow: hidden;
+}
+.company_description p {
+  font-size: 14px;
+  font-family: "HiraKakuProN";
+  color: rgb(255, 255, 255);
+  line-height: 18pt;
+  text-align: left;
+}
+
+.company_btn{
+    width: 55%;
+    margin-top: 24px;
+}
+
+.company_btn {
+    position: relative;
+    width: 36.5%;
+    height: fit-content;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+.company_btn:after {
+    background: transparent;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 3px;
+    pointer-events: none;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+}
+
+
+
+
+.company_btn p {
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-size: 14pt;
+    letter-spacing: 2.2px;
+}
+
+.company_btn p:before{
+    content: '';
+    position: absolute;
+    top: 35%;
+    left: 31%;
+    width: 7px;
+    height: 10px;
+    background-image: url( ../img/front/right-triangle.png );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.company_girl{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 315px;
+}
+/*end company part*/
+
+/*begin other part*/
+.other_box{
+    background-color: #f4faf4;
+    padding-top: 34px;
+    padding-bottom: 39px;
+}
+.other_box .in_wrapper{    
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.other_item_box{
+    position: relative;
+    width: calc( 33.3333% - 12px );
+}
+.about_box,
+.factory_box{
+    margin-right: 9px;
+}
+.factory_box,
+.molding_box{
+    margin-left: 9px;
+}
+.about_box{
+    background-image: url( ../img/front/about_us_back.jpg );
+}
+.factory_box{
+    background-image: url( ../img/front/facctory_back.jpg );
+}
+.molding_box{
+    background-image: url( ../img/front/molding_back.jpg );
+}
+.other_item_box{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+.other_kind p{
+  font-size: 11pt;
+  font-family: "AvenirNextCondensed";
+  color: rgb(255, 255, 255);
+  line-height: 42pt;
+  text-align: center;
+}
+.other_title p{
+  font-size: 14pt;
+  font-family: "HiraKakuProN";
+  color: rgb(255, 255, 255);
+  line-height: 30pt;
+  text-align: center;
+}
+.factory_box .other_title p,
+.molding_box .other_title p{
+    line-height: 52pt;
+}
+
+
+/*end other part*/
+
+/*begin news part*/
+.news_box{
+    padding-top: 66px;
+    padding-bottom: 38px;
+}
+.news_top{  
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.news_title{
+    width: 19%;
+    text-align: center;
+}
+.news_title_top{
+  font-size: 30.8pt;
+  font-family: "AvenirNextCondensed";
+  color: rgb(0, 0, 0);
+  line-height: 30.8pt;
+}
+.news_title_down {
+  font-size: 15pt;
+  font-family: "HiraKakuProN";
+  color: rgb(51, 51, 51);
+  line-height: 45pt;
+}
+
+
+.new_line{
+    position: relative;
+    width: 4px;
+    height: auto;
+    background-color: #8ddc90;
+}
+.new_line:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 40%;
+    border-style: solid;
+    border-width: 0px 4px 8px 0px;
+    border-color: #8ddc90 #50af53 transparent #8ddc90;
+}
+
+.news_list_box{
+    width: calc( 81% - 5px ) ;
+    position: relative;
+}
+.news_list_item{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;    
+}
+.news_date{
+    width: 25%;
+    text-align: center;
+}
+
+.news_label {
+    width: 75%;
+    text-align: left;
+}
+.news_date p ,
+.news_label p {
+  font-size: 14pt;
+  font-family: "HiraKakuProN";
+  color: rgb(0, 0, 0);
+  line-height: 32pt;
+}
+
+.news_btn_box{
+    padding-top: 40px; 
+    padding-bottom: 40px;
+}
+
+.news_btn {
+    position: relative;
+    margin: 0 auto;
+    width: 265px;
+    height: fit-content;
+    border-radius: 1px;
+    border: 1px solid #50af53;
+    background-color: transparent;
+}
+.news_btn:after {
+    background: transparent;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 2px;
+    pointer-events: none;
+    border-right-color: #50af53;
+    border-bottom-color: #50af53;
+}
+.news_btn p {
+    line-height: 48px;
+    text-align: center;
+    color: #50af53;
+    background-color: transparent;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-size: 14pt;
+    letter-spacing: 0px;
+}
+
+.news_btn p:before{
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: calc( 50% - 100px );
+    width: 7px;
+    height: 10px;
+    background-image: url( ../img/front/right-triangle-green.png );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/*end news part*/
+
+/*begin product part*/
+.product_box{
+    padding-top: 42px;
+}
+.product_title{
+    text-align: center;
+}
+.product_title_en {
+    font-size: 30.8pt;
+    font-family: "AvenirNextCondensed";
+    color: rgb(0, 0, 0);
+    line-height: 46.2pt;
+    text-align: center;
+}
+.product_title_jp {
+  font-size: 15pt;
+  font-family: "HiraKakuProN";
+  color: rgb(51, 51, 51);
+  line-height: 15pt;
+}
+
+.product_line{
+    position: relative;
+    margin: 15px auto;
+    width: 25%;
+    height: 5px;
+    background-color: #8ddc90;
+}
+
+.product_line:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55%;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 20px 0 5px;
+    border-color: #50af53 #8ddc90 transparent #50af53;
+}
+.product_description{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.product_description p{
+    font-size: 13pt;
+    font-family: "HiraKakuProN";
+    color: rgb(0, 0, 0);
+    line-height: 25pt;
+    letter-spacing: 0;
+}
+
+
+.product_btn_box{
+    padding-top: 5px; 
+    padding-bottom: 40px;
+}
+
+.product_btn {
+    position: relative;
+    margin: 0 auto;
+    width: 265px;
+    height: fit-content;
+    border-radius: 3px;
+    border: 1px solid #50af53;
+    background-color: transparent;
+}
+.product_btn:after {
+    background: transparent;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 2px;
+    pointer-events: none;
+    border-right-color: #50af53;
+    border-bottom-color: #50af53;
+}
+.product_btn p {
+    line-height: 48px;
+    text-align: center;
+    color: #50af53;
+    background-color: transparent;
+    font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+    font-size: 14pt;
+    letter-spacing: 0px;
+}
+
+.product_btn p:before{
+    content: '';
+    position: absolute;
+    top: 37%;
+    left: 28%;
+    width: 7px;
+    height: 10px;
+    background-image: url( ../img/front/right-triangle-green.png );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*end product part*/
+
+/*begin product list part*/
+.pl_title{    
+    display: flex;
+    flex-wrap: wrap;
+}
+.pl_title>div{
+    width: 50%;
+}
+.pl_title .left p{
+  font-size: 16px;
+  font-family: "HiraKakuProN";
+  color: rgb(0, 0, 0);
+  line-height: 32pt;
+  text-align: left;
+}
+.pl_title .right a {
+  font-size: 14pt;
+  font-family: "HiraKakuProN";
+  color: rgb(80, 175, 83);
+  line-height: 32pt;
+  text-align: right;
+}
+.pl_title .right a p{
+  padding-right: 14px;
+  position: relative;
+}
+.pl_title .right a p:after{
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    transform: rotate(315deg);
+    border-bottom: 1px solid rgb(80, 175, 83);
+    border-right: 1px solid rgb(80, 175, 83);
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 14px;
+    right: 3px;
+}
+.pl_list_box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 44px;
+}
+.pl_list_item{
+    width: 25%;
+    border-bottom: 1px solid #8ddc90;
+    border-left: 1px solid #8ddc90;
+    border-right: 1px solid #8ddc90;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    text-align: center;
+}
+.pll_item_title{
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 32px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pll_item_title p{
+    font-size: 12px;
+    font-family: "HiraKakuProN";
+    color: rgb(51, 51, 51);
+    line-height: 14px;
+}
+.pll_item_figure{
+    height: 112px;
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pll_item_figure img{
+    height: 85%;
+    width: auto;
+}
+
+
+.pl_title_line{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 5px;
+    background-color: #8ddc90;
+}
+
+.pl_title_line:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 5px;
+    background-color: #50af53;
+}
+/*end product list part*/
